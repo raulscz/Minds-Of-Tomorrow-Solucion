@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    /* font family */
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*estilos de navegación*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10% 0 10%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.8s;
+}
+
+li {
+    float: left;
+    width: 25%;
+}
+
+li a {
+    display: block;
+    font-size: 2vw;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: gray;
+    background-color: black;
+}
+
+
+/*estilos de navegación*/
+
+.header {
+    background-image: url("../img/banner-2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 100px;
+}
+
+
+/*clases de columnas*/
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 3% 13%;
+}
+
+.one-column h1 {
+    font-size: 5vw;
+    text-align: center;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 2%;
+}
+
+.two-column h1 {
+    font-size: 5vw;
+}
+
+.two-column p {
+    font-size: 3vw;
+}
+
+.two-column img {
+    width: 100%;
+}
+
+.four-column {
+    float: left;
+    width: 25%;
+    padding: 2%;
+}
+
+.four-column p {
+    text-align: center;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+#section-2 {
+    background-color: #28eca5;
+}
+
+#section-5 {
+    background-color: #46a6fc;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+}
+
+#footer p {
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/*clases auxiliares*/
+
+.padding-0 {
+    padding: 0px;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:700px) {
+    .two-column {
+        width: 100%;
+    }
+    .four-column {
+        width: 50%;
+    }
+    li a {
+        font-size: 14px;
+    }
+    ul {
+        padding: 0px;
+    }
+    .header h1 {
+        font-size: 300%;
+    }
+    .two-column h1 {
+        font-size: 8vw;
+    }
+    .two-column p {
+        font-size: 4.2vw;
+    }
+}
