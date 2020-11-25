@@ -11,6 +11,9 @@
 Los estilos externos son definidos con la etiqueta <link>,
 dentro de la sección <head> de la página HTML:
 -->
+    <script>
+        src = "js/codigo.js"
+    </script>
 </head>
 
 <body>
@@ -26,7 +29,7 @@ dentro de la sección <head> de la página HTML:
         <h1>the creative after-school</h1>
     </div>
     <!--sección 1-->
-    <div class="row" id="section-1">
+    <div class="row padding-30" id="section-1">
         <div class="two-column">
             <h1>Our enrichment programs boost your kid to a brighter future</h1>
             <p>Embark your kid into an inspirational journey of fun and discovery through a hands-on approach.</p>
@@ -36,7 +39,7 @@ dentro de la sección <head> de la página HTML:
         </div>
     </div>
     <!--Sección 2-->
-    <div class="row" id="section-2">
+    <div class="row padding-30" id="section-2">
         <div class="one-column">
             <h1>Innovative programs for ages 6 to 13. </h1>
             <div class="four-column">
@@ -59,7 +62,7 @@ dentro de la sección <head> de la página HTML:
 
     </div>
     <!---Sección 3-->
-    <div class="row" id="section-3">
+    <div class="row padding-30" id="section-3">
         <div class="two-column">
             <img src="img/section-3.png" alt="imagen de seccion3">
         </div>
@@ -69,7 +72,7 @@ dentro de la sección <head> de la página HTML:
         </div>
     </div>
     <!---Sección 4-->
-    <div class="row" id="section-4">
+    <div class="row padding-30" id="section-4">
         <div class="four-column padding-0">
             <img src="img/section-4-a.jpg" alt="">
         </div>
@@ -104,20 +107,6 @@ dentro de la sección <head> de la página HTML:
             <p>The Studio</p>
         </div>
     </div>
-    <script>
-        // When the user scrolls down 50px from the top of the document, resize the header's font size
-        window.onscroll = function() {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("nav").style.backgroundColor = "white";
-            } else {
-                document.getElementById("nav").style.backgroundColor = "rgba(0,0,0,0.0)";
-            }
-        }
-    </script>
 </body>
 
 </html>

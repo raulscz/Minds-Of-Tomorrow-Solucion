@@ -140,6 +140,10 @@ li a:hover:not(.active) {
     padding: 0px;
 }
 
+.padding-30 {
+    padding-top: 30px;
+}
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
